@@ -1,0 +1,6 @@
+// MIXIN
+@mixin cambiar-fuente($color, $tamano, $grosor) {
+    color: $color;
+    font-size: $tamano;
+    font-weight: $grosor;
+  }  

@@ -1,0 +1,90 @@
+//ESTILOS MAIN
+main {
+    font-family: $primary-font;
+    
+    //ESTILOS IMAGEN PRINCIPAL
+    .imgmain {
+        display: flex;
+        position: relative;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        height: 20%;
+    }
+
+    .contactus {
+        display: flex;
+        width: 30%;
+        height: 30%;
+        position: relative;
+        text-align: center;
+        margin: auto;
+    }
+    //ESTILOS TEXTOS MAIN
+    h1 {
+        font-size: xx-large;
+        text-align: center;
+        color: $text-color;
+        font-weight: bold
+    }
+
+    .parrafo-main {
+        @include cambiar-fuente(black, xx-large, bold)
+    }
+
+    p {
+        font-size: large;
+        text-align: center;
+        color: $text-color;
+    }
+
+    .ultimo-parrafo {
+        @extend %parrafo-color-bold;
+    }
+    //ESTILOS LOGOS CONTACTO
+    .contactlist {
+        list-style: none;
+        font-family: $primary-font;
+        color: $text-color;
+    }
+
+    .contactlogo {
+        width: 20px;
+        height: 20px;
+    }
+
+        //ESTILOS IMAGENES SECUNDARIAS
+    .contactus { //TRANSFORMACIÓN, TRANSICIÓN Y ANIMACIÓN
+        transform: rotate(-3deg);
+        box-shadow: 30px 2px 235px -11px rgba(0,0,0,0.93);
+        -webkit-box-shadow: 30px 2px 235px -11px rgba(0,0,0,0.93);
+        -moz-box-shadow: 30px 2px 235px -11px rgba(0,0,0,0.93);
+        transition: 1s;
+        
+      &:hover{ 
+        transform: rotate(3deg);
+      }
+    }
+
+    .imgareadesarrollo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .div-img-areas {
+        font-family: $primary-font;
+        color: $text-color;
+    }
+
+    .proyectoslist {
+        position: relative;
+        list-style: none;
+        display: flex;
+        color: $text-color;
+        justify-content: center;
+        text-align: center;
+    }
+}

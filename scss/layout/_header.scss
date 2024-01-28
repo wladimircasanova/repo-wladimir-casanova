@@ -1,0 +1,15 @@
+    //ESTILOS HEADER
+    header {
+            .contenedorheader {
+            //@extend %background-color;
+            padding: 60px 100px;   
+            }
+            
+        a {
+            &:hover {
+                font-weight: bold;
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+        }
+    }

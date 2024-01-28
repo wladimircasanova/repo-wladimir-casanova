@@ -1,0 +1,16 @@
+//UTILITIES
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+//BASE
+@import "base/reset";
+//COMPONENTS
+@import "components/botones.scss";
+@import "components/cards.scss";
+//LAYOUT
+@import "layout/media.scss";
+@import "layout/header.scss";
+@import "layout/main.scss";
+@import "layout/footer.scss";
+
+
